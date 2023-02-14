@@ -1,7 +1,7 @@
 //let jsonData = require("./pokedex.json");
 const express = require("express");
 const app = express();
-port = 8088;
+port = process.env.PORT || 8088;
 const cors = require("cors");
 
 const pokeRoutes = require("./routes/pokes");
